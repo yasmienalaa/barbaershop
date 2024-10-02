@@ -180,7 +180,7 @@ a.scrollup i{
     position: relative;
     display: inline-block;
     visibility: hidden;
-    padding-left: 50%;
+    padding-left: 40%;
     margin: 10px;
 }
 
@@ -190,6 +190,7 @@ a.scrollup i{
     background-color: #f9f9f9;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
+    width: 82px;
 }
 
 .dropdown-content a {
@@ -225,8 +226,10 @@ a.scrollup i{
     .dropdown{
         visibility: visible;
     }
-    .right img{
-        width: 400px;
+    .right img,
+    iframe{
+        width: 270px;
+        height: 300px;
     }
     .box{
         display: block;
@@ -234,7 +237,10 @@ a.scrollup i{
     .box3{
         display: block;
     }
-    .nd img{
+    nav{
         width: 400px;
+    }
+    #s1{
+        font-size: x-large;
     }
 }
