@@ -1,0 +1,240 @@
+html{
+    scroll-behavior: smooth;
+}
+body{   
+    font-family: 'Open Sans', arial;
+    font-weight: 200;
+    color: #686868;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    right: 0;
+    left: 0;
+    background-color: #5d5851;
+    z-index: 100;
+}
+.logo img{
+    width: 133px;
+}
+ul{
+    display: flex;
+    justify-content: space-around;
+    width: 700px;
+    list-style-type: none;
+    align-items: center;
+}
+li a{
+    text-decoration: none;
+    font-size: x-large;
+    color: white;
+    cursor: pointer;
+    /* transition: 1s; */
+}
+li a:hover{
+   color:#ae9768;
+}
+
+#s1{
+    background-image: url(barber-15.jpg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: xx-large;
+    color: white;
+    height: 800px;
+    background-size: cover;
+    background-position: center top;
+    padding: 30px;
+    margin: -8px;
+}
+.b1 button{
+    width: 250px;
+    height: 70px;
+    color: white;
+    background-color: #ae9768;
+    font-size: x-large;
+    border: none;
+    border-radius:5px ;
+    transition: 1s;
+    cursor: pointer;
+    margin: 5px;
+}
+.b1 button:hover{
+    background-color: white;
+    color: black;
+}
+#s2{
+    display: flex;
+    text-align: center;
+    font-size: x-large;
+    padding: 50px;
+    margin: 20px;
+}
+h3{
+   color:#5d5851;
+}
+#s3{
+    display: flex;
+    gap: 5%;
+    padding: 40px;
+    margin: 20px;
+    font-size: x-large;
+    background-color: #f8f8f8;
+}
+.box{
+    display: grid;
+    grid-template-columns: auto auto;
+}
+.right img{
+    /* width: 500px; */
+    height: 500px;
+    padding-top: 90px;
+}
+#s4{
+    background-image: url(barber-2.jpg);
+    height: 600px;
+    background-size: cover;
+    margin: -8px;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    font-size: xx-large;
+    align-items: center;
+    justify-content: center;
+}
+.t1{
+    text-align: center;
+}
+#s5{
+    text-align: center;
+    font-size: larger;
+    padding: 40px;
+    margin: 20px;
+    text-align: center;
+    font-size: larger;
+    background-color: #fff;
+}
+.box3{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    align-items: center;
+    gap: 10%;
+}
+#s6{
+    display: flex;
+    align-items: center;
+    gap: 5%;
+    font-size: x-large;
+    padding: 40px;
+    background-color: #f8f8f8;
+}
+.nd img{
+    height: 500px;
+    width: 600px;
+}
+.end{
+    display: flex;
+    gap: 10%;
+    font-size: larger;
+    padding: 40px;
+    background-color: #403d38;
+    color: #969696;
+    margin: -8px;
+
+}
+footer{
+    background-color: #353330;
+    text-align: center;
+    padding: 40px;
+    margin: -8px;
+}
+a.scrollup{
+    background: rgba(0, 0, 0, 0.6);
+    border: 2px solid rgba(255, 255, 255, 0.8);
+    height: 40px;
+    width: 40px;
+    font-size: 22px;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    z-index: 9999;
+    opacity: .5;
+    border-radius: 50%;
+}
+a.scrollup i{
+    color: #fff !important;
+    position: absolute;
+    top: 5px;
+    left: 11px;
+}
+.dropbtn {
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    visibility: hidden;
+    padding-left: 50%;
+    margin: 10px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+@media screen and (max-width: 700px) {
+    #s2{
+        flex-direction: column;
+    }
+    #s3{
+        flex-direction: column;
+    }
+    #s5{
+        flex-direction: column;
+    }
+    #s6{
+        flex-direction: column;
+    }
+    .end{
+        flex-direction: column;
+    }
+    ul{
+        visibility: hidden;
+    }
+    .dropdown{
+        visibility: visible;
+    }
+    .right img{
+        width: 400px;
+    }
+    .box{
+        display: block;
+    }
+    .box3{
+        display: block;
+    }
+    .nd img{
+        width: 400px;
+    }
+}
